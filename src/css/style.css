@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+
+.time, .date{
+  font-family:'Fredericka the Great';
+}
 .favicons-show {
   --favicons-display: inline-block;
 }
@@ -38,12 +43,13 @@
 
   --input-background: #eeeeee;
   --input-color: #24292e;
-  
+
   --focus-color: #1a73e8;
 }
 
 .theme-smooth-dark:root {
-  --background-color: #24292e;
+  /*--background-color: #24292e;*/
+  --background-color: rgb(57,57,57);
   --text-color: white;
 }
 
@@ -572,6 +578,7 @@ summary {
   opacity: 0.8;
   font-weight: 100;
 }
+
 
 .tz-time {
   font-size: 1.25rem;
