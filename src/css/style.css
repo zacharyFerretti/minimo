@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+.time{
+  /*font-family:'Quattrocento Sans';*/
+  font-family: 'Ubuntu';
 
-.time, .date{
-  font-family:'Fredericka the Great';
+}
+.date{
+  font-family: 'Lato';
 }
 .favicons-show {
   --favicons-display: inline-block;
@@ -47,11 +53,22 @@
   --focus-color: #1a73e8;
 }
 
-.theme-smooth-dark:root {
-  /*--background-color: #24292e;*/
-  --background-color: rgb(57,57,57);
-  --text-color: white;
+@media (prefers-color-scheme: dark) {
+  .theme-smooth-dark:root {
+    /*--background-color: #24292e;*/
+    --background-color: rgb(57,57,57);
+    --text-color: white;
+  }
 }
+@media (prefers-color-scheme: light) {
+  .theme-smooth-dark:root {
+    /*--background-color: #24292e;*/
+    --background-color: rgb(243,243,243);
+    --text-color: rgb(35,64,153);
+  }
+}
+
+
 
 .theme-pure-light:root {
   --background-color: white;
