@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
-.time{
+
+.time {
   /*font-family:'Quattrocento Sans';*/
   font-family: 'Ubuntu';
-
 }
-.date{
+
+.date {
   font-family: 'Lato';
 }
+
 .favicons-show {
   --favicons-display: inline-block;
 }
@@ -57,19 +59,20 @@
     will automatically switch colors based on the OS color scheme. Tested in
     macOS 10.15.2 but should work in Mojave as well. Have not tried on mobile. */
 
-    
+
 @media (prefers-color-scheme: dark) {
   .theme-smooth-dark:root {
     /*--background-color: #24292e;*/
-    --background-color: rgb(57,57,57);
+    --background-color: rgb(57, 57, 57);
     --text-color: white;
   }
 }
+
 @media (prefers-color-scheme: light) {
   .theme-smooth-dark:root {
     /*--background-color: #24292e;*/
-    --background-color: rgb(243,243,243);
-    --text-color: rgb(35,64,153);
+    --background-color: rgb(243, 243, 243);
+    --text-color: rgb(35, 64, 153);
   }
 }
 
@@ -232,7 +235,8 @@ a:not(.button):not(.url):visited {
   font-weight: 100;
 }
 
-.status, .special-message {
+.status,
+.special-message {
   display: block;
   font-size: 1rem;
   font-weight: 100;
@@ -472,7 +476,7 @@ a:not(.button):not(.url):visited {
 .overlay {
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   position: fixed;
   z-index: 999;
   display: flex;
@@ -507,7 +511,9 @@ a:not(.button):not(.url):visited {
   color: #ff8d5e;
 }
 
-.input-container input:not([type="checkbox"]), .input-container select, .input-container textarea {
+.input-container input:not([type="checkbox"]),
+.input-container select,
+.input-container textarea {
   font-weight: 300;
   font-size: 1rem;
   -webkit-appearance: none;
@@ -542,7 +548,9 @@ a:not(.button):not(.url):visited {
   font-family: monospace;
 }
 
-.input-container input:not([type="checkbox"]):focus, .input-container select:focus, .input-container textarea:focus {
+.input-container input:not([type="checkbox"]):focus,
+.input-container select:focus,
+.input-container textarea:focus {
   color: var(--input-color);
   box-shadow: 0 0 0 2px var(--focus-color);
 }
