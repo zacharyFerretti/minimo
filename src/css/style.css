@@ -53,6 +53,11 @@
   --focus-color: #1a73e8;
 }
 
+/* This makes it so that the theme for Minimo when using the smooth dark Theme
+    will automatically switch colors based on the OS color scheme. Tested in
+    macOS 10.15.2 but should work in Mojave as well. Have not tried on mobile. */
+
+    
 @media (prefers-color-scheme: dark) {
   .theme-smooth-dark:root {
     /*--background-color: #24292e;*/
