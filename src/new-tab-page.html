@@ -19,6 +19,7 @@
   <script src="./libraries/modikeys.js"></script>
   <script src="./libraries/debounce.js"></script>
   <script src="./libraries/timezones.js"></script>
+  <script src="./simpleAlert.js"></script>
   <!-- libraries that depend on the DOM being loaded -->
   <script defer src="index.js"></script>
   <div id="welcome-dialog" class="dialog corner hidden">
@@ -160,15 +161,31 @@
     <div class="time-box">
       <span class="time"></span>
       <span class="date"></span>
+      <br />
+      <!--<a class="weatherwidget-io" href="https://forecast7.com/en/42d36n71d06/boston/?unit=us" data-label_1="BOSTON"
+        data-label_2="MA" data-font="Ubuntu" data-mode="Current">BOSTON MA</a>-->
+
       <span class="status"></span>
       <span class="special-message hidden"></span>
     </div>
+    <!--<button id="MYBUTTON">try me</button>-->
     <div id="tz-box"></div>
     <div class="devices-box">
       <div class="tabs"></div>
     </div>
 
   </div>
+  <!--<script>
+    ! function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'weatherwidget-io-js');
+  </script>-->
 </body>
 
 </html>
