@@ -9,6 +9,15 @@
 
 .date {
   font-family: "Lato";
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.weather {
+  font-style: italic;
+  font-family: "Lato";
+  font-size: 1.25rem;
+  font-weight: 200;
 }
 
 .favicons-show {
@@ -65,88 +74,58 @@
     --background-color: rgb(57, 57, 57);
     --text-color: white;
   }
-  .facebook:hover {
-    --text-color: rgb(38, 82, 255);
-  }
-  .reddit:hover {
-    --text-color: rgb(236, 84, 40);
-  }
-  .youtube:hover {
-    --text-color: rgb(234, 50, 35);
-  }
-  .flix:hover {
-    --text-color: rgb(211, 47, 39);
-  }
-  .hulu:hover {
-    --text-color: rgb(111, 231, 143);
-  }
-  .devdocs:hover {
-    --text-color: gray;
-  }
-  .git:hover {
-    --text-color: rgb(152, 82, 170);
-  }
-  .lab:hover {
-    --text-color: rgb(209, 79, 54);
-  }
-  .fonts:hover {
-    --text-color: rgb(234, 101, 95);
-  }
-  .dropbox:hover {
-    --text-color: rgb(38, 82, 255);
-  }
-  .moodle:hover {
-    --text-color: rgb(255, 172, 99);
-  }
-  .drive:hover {
-    --text-color: rgb(255, 204, 64);
-  }
 }
 
 @media (prefers-color-scheme: light) {
   .theme-smooth-dark:root {
-    /*--background-color: #24292e;*/
-    --background-color: rgb(243, 243, 243);
+    /*--background-color: #24292e;
+    --background-color: rgb(243, 243, 243);*/
+    --background-color: rgb(222, 225, 227);
     --text-color: rgb(35, 64, 153);
   }
-  .facebook:hover {
-    --text-color: rgb(38, 82, 255);
-  }
-  .reddit:hover {
-    --text-color: rgb(236, 84, 40);
-  }
-  .youtube:hover {
-    --text-color: rgb(234, 50, 35);
-  }
-  .flix:hover {
-    --text-color: rgb(211, 47, 39);
-  }
-  .hulu:hover {
-    --text-color: rgb(111, 231, 143);
-  }
-  .devdocs:hover {
-    --text-color: gray;
-  }
-  .git:hover {
-    --text-color: rgb(152, 82, 170);
-  }
-  .lab:hover {
-    --text-color: rgb(209, 79, 54);
-  }
-  .fonts:hover {
-    --text-color: rgb(234, 101, 95);
-  }
-  .dropbox:hover {
-    --text-color: rgb(38, 82, 255);
-  }
-  .moodle:hover {
-    --text-color: rgb(255, 172, 99);
-  }
-  .drive:hover {
-    --text-color: rgb(255, 204, 64);
-  }
 }
-
+/* This adds functionality so that each of the different shortcuts I  have has a
+   different color when hovered over. 
+   
+   To see how this functionality was achived go to the ../classUpdate.js file 
+   and read the documentation there.   
+*/
+.facebook:hover {
+  --text-color: rgb(38, 82, 255);
+}
+.reddit:hover {
+  --text-color: rgb(236, 84, 40);
+}
+.youtube:hover {
+  --text-color: rgb(234, 50, 35);
+}
+.flix:hover {
+  --text-color: rgb(211, 47, 39);
+}
+.hulu:hover {
+  --text-color: rgb(111, 231, 143);
+}
+.devdocs:hover {
+  --text-color: gray;
+}
+.git:hover {
+  --text-color: rgb(152, 82, 170);
+}
+.lab:hover {
+  --text-color: rgb(209, 79, 54);
+}
+.fonts:hover {
+  --text-color: rgb(234, 101, 95);
+}
+.dropbox:hover {
+  --text-color: rgb(38, 82, 255);
+}
+.moodle:hover {
+  --text-color: rgb(255, 172, 99);
+}
+.drive:hover {
+  --text-color: rgb(255, 204, 64);
+}
 .theme-pure-light:root {
   --background-color: white;
   --text-color: #24292e;
@@ -321,11 +300,6 @@ a:not(.button):not(.url):visited {
 
 .special-message.hidden {
   display: none;
-}
-
-.date {
-  font-size: 2rem;
-  font-weight: 200;
 }
 
 .bookmarks-box {
