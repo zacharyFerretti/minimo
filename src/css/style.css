@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:100&display=swap");
 
 .time {
   /*font-family:'Quattrocento Sans';*/
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
 }
 
 .date {
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 .favicons-show {
@@ -20,7 +20,7 @@
 }
 
 .mode-dark:root {
-  --menu-background: #3C4149;
+  --menu-background: #3c4149;
   --menu-color: white;
 
   --divider-color: #2b3035;
@@ -38,7 +38,7 @@
 }
 
 .mode-light:root {
-  --menu-background: #FFFFFF;
+  --menu-background: #ffffff;
   --menu-color: #24292e;
 
   --divider-color: #eeeeee;
@@ -59,12 +59,47 @@
     will automatically switch colors based on the OS color scheme. Tested in
     macOS 10.15.2 but should work in Mojave as well. Have not tried on mobile. */
 
-
 @media (prefers-color-scheme: dark) {
   .theme-smooth-dark:root {
     /*--background-color: #24292e;*/
     --background-color: rgb(57, 57, 57);
     --text-color: white;
+  }
+  .facebook:hover {
+    --text-color: rgb(38, 82, 255);
+  }
+  .reddit:hover {
+    --text-color: rgb(236, 84, 40);
+  }
+  .youtube:hover {
+    --text-color: rgb(234, 50, 35);
+  }
+  .flix:hover {
+    --text-color: rgb(211, 47, 39);
+  }
+  .hulu:hover {
+    --text-color: rgb(111, 231, 143);
+  }
+  .devdocs:hover {
+    --text-color: gray;
+  }
+  .git:hover {
+    --text-color: rgb(152, 82, 170);
+  }
+  .lab:hover {
+    --text-color: rgb(209, 79, 54);
+  }
+  .fonts:hover {
+    --text-color: rgb(234, 101, 95);
+  }
+  .dropbox:hover {
+    --text-color: rgb(38, 82, 255);
+  }
+  .moodle:hover {
+    --text-color: rgb(255, 172, 99);
+  }
+  .drive:hover {
+    --text-color: rgb(255, 204, 64);
   }
 }
 
@@ -74,9 +109,43 @@
     --background-color: rgb(243, 243, 243);
     --text-color: rgb(35, 64, 153);
   }
+  .facebook:hover {
+    --text-color: rgb(38, 82, 255);
+  }
+  .reddit:hover {
+    --text-color: rgb(236, 84, 40);
+  }
+  .youtube:hover {
+    --text-color: rgb(234, 50, 35);
+  }
+  .flix:hover {
+    --text-color: rgb(211, 47, 39);
+  }
+  .hulu:hover {
+    --text-color: rgb(111, 231, 143);
+  }
+  .devdocs:hover {
+    --text-color: gray;
+  }
+  .git:hover {
+    --text-color: rgb(152, 82, 170);
+  }
+  .lab:hover {
+    --text-color: rgb(209, 79, 54);
+  }
+  .fonts:hover {
+    --text-color: rgb(234, 101, 95);
+  }
+  .dropbox:hover {
+    --text-color: rgb(38, 82, 255);
+  }
+  .moodle:hover {
+    --text-color: rgb(255, 172, 99);
+  }
+  .drive:hover {
+    --text-color: rgb(255, 204, 64);
+  }
 }
-
-
 
 .theme-pure-light:root {
   --background-color: white;
@@ -90,36 +159,36 @@
 }
 
 .theme-material-red:root {
-  --background-color: #F44336;
-  --text-color: #FFFFFF;
+  --background-color: #f44336;
+  --text-color: #ffffff;
 }
 
 .theme-material-blue:root {
   --background-color: #3367d6;
-  --text-color: #FFFFFF;
+  --text-color: #ffffff;
 }
 
 .theme-forrest-green:root {
-  --background-color: #8BC34A;
+  --background-color: #8bc34a;
   --text-color: #1b5e19;
   --text-weight: 300;
 }
 
 .theme-savage-pink:root {
-  --background-color: #E91E63;
+  --background-color: #e91e63;
   --text-color: #ffffff;
   --text-weight: 300;
 }
 
 .theme-bumblebee:root {
-  --background-color: #FFEB3B;
+  --background-color: #ffeb3b;
   --text-color: #000000;
   --text-weight: 300;
 }
 
 .theme-persian-green:root {
   --background-color: #009688;
-  --text-color: #EAF1F6;
+  --text-color: #eaf1f6;
 }
 
 :root {
@@ -152,7 +221,8 @@ body {
   background-size: cover;
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   user-select: none;
 }
 
@@ -173,10 +243,10 @@ a:not(.button):not(.url) {
 .sortable-ghost {
   visibility: hidden;
 }
-
+/* 12-26-19 Disabled the opacity to add better color highlighting*/
 a:not(.button):not(.url):hover {
   color: var(--text-color);
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 
 a:not(.button):not(.url):visited {
@@ -190,7 +260,7 @@ a:not(.button):not(.url):visited {
 .favicon {
   width: 24px;
   height: 24px;
-  margin-right: 0.500rem;
+  margin-right: 0.5rem;
   display: var(--favicons-display);
   background: white;
   border-radius: 1rem;
@@ -208,7 +278,7 @@ a:not(.button):not(.url):visited {
 .link .favicon {
   width: 18px;
   height: 18px;
-  margin-right: 0.250rem;
+  margin-right: 0.25rem;
   vertical-align: text-up;
 }
 
@@ -259,7 +329,7 @@ a:not(.button):not(.url):visited {
 }
 
 .bookmarks-box {
-  font-size: 1.250rem;
+  font-size: 1.25rem;
   font-weight: var(--text-weight, 200);
   letter-spacing: 1px;
   text-align: center;
@@ -290,7 +360,7 @@ a:not(.button):not(.url):visited {
 .link {
   vertical-align: middle;
   display: inline-block;
-  padding: 0.250rem 0.500rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 1rem;
   margin: 0.5rem;
   -webkit-user-drag: element;
@@ -332,7 +402,7 @@ a:not(.button):not(.url):visited {
   border: none;
   font-weight: 400;
   padding: 0.5rem 0.675rem;
-  border-radius: 0.250rem;
+  border-radius: 0.25rem;
   background-color: var(--button-background);
   margin: 1rem;
   font-size: 1rem;
@@ -349,11 +419,11 @@ a:not(.button):not(.url):visited {
   color: var(--text-color);
   opacity: 0.6;
 }
-
+/* 12-26-19 Disabled the opacity to add better color highlighting*/
 .button.outlined:hover {
   background-color: var(--text-color);
   color: var(--background-color);
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 .button.primary {
@@ -442,8 +512,8 @@ a:not(.button):not(.url):visited {
   background-color: var(--menu-background);
   color: var(--menu-color);
   border-radius: 0.5rem;
-  padding: 1.250rem;
-  font-size: 0.850rem;
+  padding: 1.25rem;
+  font-size: 0.85rem;
   will-change: width, height;
 }
 
@@ -527,7 +597,7 @@ a:not(.button):not(.url):visited {
   -webkit-padding-start: 0.675rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  border-radius: 0.250rem;
+  border-radius: 0.25rem;
   background: var(--input-background);
   caret-color: var(--input-color);
   color: var(--input-color);
@@ -609,7 +679,6 @@ summary {
   font-weight: 100;
 }
 
-
 .tz-time {
   font-size: 1.25rem;
   font-weight: 300;
@@ -650,7 +719,7 @@ summary {
 @keyframes land {
   from {
     opacity: 0;
-    transform: scale3d(1.10, 1.10, 1);
+    transform: scale3d(1.1, 1.1, 1);
   }
 
   50% {
