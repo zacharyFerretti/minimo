@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
           array[i].classList.add("devdocs");
         } else if (array[i].title == "►") {
           array[i].classList.add("youtube");
+        } else if (array[i].title == "500px") {
+          array[i].classList.add("px");
         } else {
           array[i].classList.add(array[i].title);
         }
